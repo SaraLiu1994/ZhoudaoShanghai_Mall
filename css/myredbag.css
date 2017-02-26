@@ -1,0 +1,192 @@
+*{margin: 0;padding: 0;border: 0;list-style: none;}
+
+
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,
+dl,dt,dd,ul,ol,li,pre,form,fieldset,
+form,legend,button{
+    outline: 0;
+    vertical-align: baseline;
+    background: transparent;}
+
+body{width: 100vw; height: 100vh; font:12px/1.5 tahoma,arial,\5b8b\4f53,sans-serif;
+    background:#e8ebf1; font-family:"微软雅黑"; }
+
+/*我的红包*/
+.head{width: 100vw;
+	height: 15vw;
+	font-size:6vw ;
+	line-height: 15vw;
+	text-align: center;
+	background: #f8f8f8;
+	background-image: url(../img/icon/back.png);
+	background-size: 6vw 6vw;
+	background-repeat:no-repeat;
+	background-position:3vw;
+}
+/*点击领取红包*/
+.clickredbag{
+	width: 100vw;
+	height: 30vw;
+	background-size: 100vw 30vw;
+	background-image: url(../img/myredbag.png);
+}
+.note{
+	width: 100vw;
+	height: 35vw;
+	text-align: center;
+}
+.note .notetitle{
+	width: 100vw;
+	height: 12vw;
+	line-height: 12vw;
+	font-size: 5vw;
+}
+.note .notecon{
+	width: 100vw;
+	height: 6vw;
+	line-height: 6vw;
+	font-size: 3vw;
+	color: #696969;
+}
+.note .notecon span{
+	color: #ff0000;
+}
+
+/*社交分享*/
+.share{
+	width: 72vw;
+	height: 78vw;
+	background: #ffffff;
+	margin: 0 auto;
+	position: relative;
+}
+/*分享列表*/
+.share .sharecon{
+	width: 66vw;
+	height: 40vw;
+	position: absolute;
+	top: 6vw;
+	left: 3vw;
+	overflow: hidden;
+}
+.share .sharecon li{
+	width: 66vw;
+	height: auto;
+	padding-top: 2vw;
+	padding-bottom: 2vw;
+	border-bottom: 1px solid #cccccc;
+	float: left;
+}
+.share .sharecon li .left {
+	width: 10vw;
+	height: 10vw;
+	float: left;
+}
+.share .sharecon li .left img{
+	width: 10vw;
+	height: 10vw;
+	border-radius: 10vw;
+}
+.share .sharecon li .right{
+	width: 55vw;
+	height: auto;
+	float: left;
+	padding-left: 1vw;
+}
+.share .sharecon li .right .username{
+	font-size: 3vw;
+	color: #696969;
+	height: 4vw;
+	line-height: 4vw;
+}
+.share .sharecon li .right .goodnum{
+	width: 10vw;
+	text-align: right;
+	float: right;
+	font-size: 3vw;
+	color: #696969;
+	height: 4vw;
+	line-height: 4vw;
+	background-image: url(../img/icon/like1.png);
+	background-size: 3vw 3vw;
+	background-repeat:no-repeat;
+	background-position:0 0.5vw;
+}
+
+/*.like{
+	width: 10vw;
+	text-align: right;
+	float: right;
+	font-size: 3vw;
+	color: #696969;
+	height: 4vw;
+	line-height: 4vw;
+	background-image: url(../img/icon/like2.png);
+	background-size: 3vw 3vw;
+	background-repeat:no-repeat;
+	background-position:0 0.5vw;
+}*/
+
+.share .sharecon li .right .time{
+	font-size: 1vw;
+	height: 4vw;
+	width: 55vw;
+	line-height: 4vw;
+	padding-left: 3vw;
+	color: #dcdcdc;
+	float: left;
+	background-image: url(../img/icon/time.jpg);
+	background-size: 2vw 2vw;
+	background-repeat:no-repeat;
+	background-position:0 0.7vw;
+}
+.share .sharecon li .right .con{
+	display: block;
+	font-size: 2vw;
+	color: #a9a9a9;
+	line-height: 4vw;
+}
+
+/*分享到各个社交app*/
+.share .shareapp{
+	width: 72vw;
+	height: 26vw;
+	position: absolute;
+	bottom: 0;
+	border-top:1px solid #cccccc; 
+	z-index: 100;
+}
+.share .shareapp button{
+	float: left;
+	width: 12vw;
+	height: 16vw;
+	margin: 5vw 6vw;
+}
+.share .shareapp button img{
+	width: 12vw;
+	height: 12vw;
+}
+.share .shareapp button p{
+	color: #696969;
+	line-height: 4vw;
+	font-size: 3vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

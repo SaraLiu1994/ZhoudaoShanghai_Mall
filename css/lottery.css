@@ -1,0 +1,178 @@
+*{margin: 0;padding: 0;border: 0;list-style: none;}
+
+
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,
+dl,dt,dd,ul,ol,li,pre,form,fieldset,
+form,legend,button{
+    outline: 0;
+    vertical-align: baseline;
+    background: transparent;}
+
+body{width: 100vw; height: 100vh; font:12px/1.5 tahoma,arial,\5b8b\4f53,sans-serif;
+    background:#e8ebf1; font-family:"微软雅黑"; }
+
+/*红包抽奖*/
+.head{width: 100vw;
+	height: 15vw;
+	font-size:6vw ;
+	line-height: 15vw;
+	text-align: center;
+	background: #fafafa;
+/*	background-image: url(../img/icon/back.png);
+	background-size: 6vw 6vw;
+	background-repeat:no-repeat;
+	background-position:3vw;*/
+}
+.head #back {
+	width: 6vw;
+	height: 6vw;
+	position: absolute;
+	top: 4vw;
+	left: 3vw;
+}
+.head #back img{
+	width: 6vw;
+	height: 6vw;
+}
+.head #myrecords{
+	position: absolute;
+	right: 3vw;
+	top: 0vw;
+	line-height: 15vw;
+	font-size: 5vw;
+	color: #696969;
+}
+
+/*奖品图片*/
+.pic{
+	width: 100vw;
+	height: 60vw;
+}
+.pic img{
+	width: 100vw;
+	height: 60vw;
+}
+/*奖品名称*/
+.nametitle{
+	width: 100vw;
+	height: 12vw;
+	background: #ffffff;
+	margin-bottom: 2vw;
+}
+.nametitle span{
+	width: 10vw;
+	height: 4vw;
+	margin: 3.5vw 3vw 3.5vw 3vw;
+	line-height: 4vw;
+	padding: 0.5vw 2vw;
+	font-size: 2vw;
+	color: #ff0000;
+	float: left;
+	border: 1px solid #ff0000;
+	border-radius: 4px;
+	text-align: center;
+}
+.nametitle .name{
+	width: 60vw;
+	height: 12vw;
+	line-height: 12vw;
+	font-size: 5vw;
+	color: #696969;
+	float: left;
+}
+.nametitle .price{
+	width: 16vw;
+	height: 12vw;
+	line-height: 12vw;
+	text-align: right;
+	font-size: 4vw;
+	color: #ff0000;
+	float: left;
+	margin-right: 3vw;
+}
+/*活动*/
+.activity{
+	width: 100vw;
+	height: auto;
+	background: #ffffff;
+}
+/*活动标题*/
+.activity .activitytitle{
+	width: 100vw;
+	height: 10vw;
+	border-bottom: 1px solid #dcdcdc;
+}
+.activity .activitytitle li{
+	width: 25vw;
+	height: 10vw;
+	font-size: 4.5vw;
+	line-height: 10vw;
+	margin-left: 3vw;
+	float: left;
+	color: #a9a9a9;
+	text-align: center;
+} 
+.select{color: #ff0000;
+	border-bottom: 1px solid #ff0000;
+}
+/*活动介绍*/
+.activity .introduce{
+	display: none;
+	width: 100vw;
+	height: auto;
+}
+.activity .introduce .introducetext{
+	width: 92vw;
+	padding: 4vw;  
+	color: #a9a9a9;
+	font-size: 4vw;
+}
+
+/*活动规则*/
+.activity .rule{
+	width: 100vw;
+	height: auto;
+}
+.activity .rule .ruletext{
+	width: 92vw;
+	padding: 4vw;  
+	color: #a9a9a9;
+	font-size: 4vw;
+}
+.activity .rule .example{
+	width: 92vw;
+	padding:0 4vw 4vw 4vw;
+	font-size: 5vw;
+	color: #696969;
+}
+
+
+/*立即抽奖按钮*/
+.tail{
+	width: 100vw;
+	height: 14vw;
+	background: #ffffff;
+	z-index: 100;
+	position: absolute;
+	bottom: 0;
+}
+.tail button{
+	width: 86vw;
+	height: 10vw;
+	margin: 2vw 7vw;
+	background: #ff0000;
+	color: #ffffff;
+	line-height: 10vw;
+	font-size: 5vw;
+	text-align: center;
+	border-radius: 3px;
+}
+
+
+
+
+
+
+
+
+

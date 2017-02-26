@@ -1,0 +1,165 @@
+*{margin: 0;padding: 0;border: 0;list-style: none;}
+
+
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,
+dl,dt,dd,ul,ol,li,pre,form,fieldset,
+form,legend,button{
+    outline: 0;
+    vertical-align: baseline;
+    background: transparent;}
+
+body{width: 100vw; height: 100vh; font:12px/1.5 tahoma,arial,\5b8b\4f53,sans-serif;
+    background:#ffffff; font-family:"微软雅黑"; }
+
+/*我要投票*/
+.head{width: 100vw;
+	height: 15vw;
+	font-size:6vw ;
+	line-height: 15vw;
+	text-align: center;
+	background: #f8f8f8;
+	background-image: url(../img/icon/back.png);
+	background-size: 6vw 6vw;
+	background-repeat:no-repeat;
+	background-position:3vw;
+}
+
+/*投票短文*/
+.title{
+	width: 100vw;
+	height: 50vw;
+	margin-top: 2vw;
+	background-color: #ffffff;
+}
+.title .con{
+	font-size: 4.2vw;
+	padding: 3vw 2vw 4vw 4vw;
+}
+.title .con .topic{
+	color: #ff0000;
+}
+.title .subtitle{
+	width: 94vw;
+	height: 20vw;
+	background-color: #f7f7f7;
+	margin-left: 3vw;
+}
+/*明星照片*/
+.title .subtitle .starpic{
+	width: 18vw;
+	height: 20vw;
+	float: left;
+}
+/*投票话题*/
+.title .subtitle .middle{
+	width: 59vw;
+	height: 20vw;
+	font-size: 3vw;
+	float: left;
+	line-height: 5vw;
+	padding-left: 2vw;
+	padding-top: 1vw;
+}
+.title .subtitle .middle p{
+	font-size: 3vw;
+	line-height: 6vw;
+	color: #696969;
+}
+/*投票图标*/
+.title .subtitle .right{
+	width: 15vw;
+	height: 20vw;
+	float: left;
+}
+.title .subtitle .right .vote img{
+	width: 11vw;
+	height: 17vw;
+	margin-top:2vw; 
+}
+
+
+/*投票list*/
+.votenote{
+	width: 100vw;
+	height: 8vw;
+	background-color: #ededed;
+}
+.votenote .note1{
+	width: 47vw;
+	height:8vw;
+	padding-left: 3vw;
+	font-size: 3vw;
+	line-height: 8vw;
+	float: left;
+	color: #696969;
+}
+.votenote .note2{
+	width: 47vw;
+	height:8vw;
+	padding-right: 3vw;
+	font-size: 3vw;
+	line-height: 8vw;
+	float: left;
+	text-align: right;
+	color: #696969;
+}
+
+.votelist li{
+	width: 98vw;
+	height: 12vw;
+	margin: 1vw;
+	background-color: #f6f6f6;
+}
+.votelist li p{
+	float: left;
+	width: 80vw;
+	height: 4vw;
+	margin-top: 4vw;
+	margin-left: 2vw;
+	font-size: 4vw;
+	line-height: 4vw;
+	color: #696969;
+}
+.votelist li .checkbox{
+	float: right;
+	width: 5vw;
+	height: 5vw;
+	margin-right: 2vw;
+	margin-top: 3.5vw;
+}
+
+/*我要投票按钮*/
+.voting{
+	width: 86vw;
+	height: 12vw;
+	margin-top: 4.5vw;
+	margin-left: 7vw;
+	border-radius: 1vw;
+	background-color: #ff0000;
+	color: #ffffff;
+	font-size: 5vw;
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

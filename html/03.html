@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+	<link rel="stylesheet" href="../css/bootstrap.css" type="text/css">
+	<link rel="stylesheet" href="../css/style.css" type="text/css">
+	<!-- <link rel="stylesheet" href="./css/weui.css" type="text/css"> -->
+	<!-- <link rel="stylesheet" href="./css/weui.css" type="text/css"> -->
+	<script type="text/javascript" src="../js/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/example.js"></script>
+	<title>03立即兑换</title>
+	
+</head>
+<body>
+	<div class="top-bar">
+      <div class="top-bar-return">
+         <a href="javascript:history.back(-1)"><img src="../img/icon/return.png"></a>
+      </div>
+      <div class="top-bar-title">立即兑换</div>
+   	</div>
+   	<div class="slider">
+	  <ul>
+	    <li><a href="#" target="_blank"><img src="../img/02/cake.png" alt=""></a></li>
+	  </ul>
+	</div>
+   	<div class="container-fluid">
+   		<div class="row verticalLine">
+   			<span class="explain greyColor">&nbsp;商品说明</span>
+   		</div>
+   		<br/>
+   		<div class="row">
+	   		<span class="goods greyColor">
+	   		&nbsp;&nbsp;&nbsp;&nbsp;总有刁民要害朕，总有刁民要害朕，总有刁民要害朕，总有刁民要害朕，总有刁民要害朕，总有刁民要害朕，总有刁民要害朕总有刁民要害朕，总有刁民要害朕，总有刁民要害朕。
+	   		</span>
+   		</div>
+   		<br/>
+   		<div class="row verticalLine">
+   			<span class="explain greyColor">&nbsp;兑换说明</span>
+   		</div>
+   		<br/>
+   		<div class="row">
+	   		<span class="conversion greyColor">
+	   		1.点击立即兑换后，填写您的地址和手机号码。
+	   		</span>
+   		</div>
+   		<div class="row">
+	   		<span class="conversion greyColor">
+	   		2.兑换成功后，可在“我的积分”页面里的“兑换记录”里查看。如果您兑换了虚拟商品，我们将会在1-2个工作日和您联系。
+	   		</span>
+   		</div>
+   		<div class="row">
+	   		<span class="conversion greyColor">
+	   		3.所有商品以收到实物为准，颜色随机。
+	   		</span>
+   		</div>
+   		<div class="row">
+	   		<span class="conversion greyColor">
+	   		4.请认真填写个人信息，一旦提交不可修改。
+	   		</span>
+   		</div>
+   		<div class="row">
+	   		<span class="conversion greyColor">
+	   		5.有问题欢迎加入Q群170911185。
+	   		</span>
+   		</div>
+   		<hr/>
+   		<!--BEGIN dialog1-->
+   		<div class="weui_dialog_confirm" id="dialog1" style="display: none" >
+   		    <div class="weui_dialog">
+   		        <!-- <div class="weui_dialog_hd"><strong class="weui_dialog_title">弹窗标题</strong></div> -->
+   		        <div class="weui_dialog_hd">
+   		        	<img src="../img/icon/warningicon.png" style="width: 20%">
+   		        </div>
+   		        <div class="weui_dialog_bd" style="text-align: center">抱歉！您的积分不够</div>
+   		        <div class="weui_dialog_ft">
+   		            <!-- <a href="javascript:;" class="weui_btn_dialog default" id="cancer">取消</a> -->
+   		            <a href="javascript:;" class="weui_btn_dialog primary" id="makesure">确定</a>
+   		        </div>
+   		    </div>
+   		</div>
+   		<!--END dialog1-->
+   		<div class="row">
+	   		<div class="col-xs-6 col-md-6 col-sm-6">
+	   		<span class="fivePoint greyColor" id="point">500积分</span>
+	   		</div>
+	   		<div class="col-xs-6 col-md-6 col-sm-6">
+	   			<a href="javascript:;" class="weui_btn weui_btn_mini weui_btn_red red_btn_size" style="font-size:1.5em" id="showDialog1">立即兑换</a>
+	   		</div>
+   		</div>
+   	</div>
+<!--BEGIN dialog2-->
+<!--END dialog2-->
+   	<script type="text/javascript" src="../js/myCarousel.js"></script>
+	<script>
+	    $(".slider").yxMobileSlider({width:300,height:200,during:4000})
+	</script>
+	<script type="text/javascript">
+		function getNum(text){
+			var value = text.replace(/[^0-9]/ig,""); 
+			return(value);
+		}
+        $("#showDialog1").click(function(){
+        	
+	        var points=$("#point").text();
+	        var val=parseInt(getNum(points));
+	        //alert(typeof val );
+	        if (val<500)
+	        {
+	        	$("#dialog1").css("display","block");
+	        	$("#makesure").click(function(){
+	        	  $("#dialog1").css("display","none");
+	        	});
+	        }
+	        else{
+	        	window.location.href="04.html";
+	        }
+          
+	        
+	    })
+	</script>
+</body>
+</html>

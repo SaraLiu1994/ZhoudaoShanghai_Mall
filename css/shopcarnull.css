@@ -1,0 +1,53 @@
+*{margin: 0;padding: 0;border: 0;list-style: none;}
+
+
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,
+dl,dt,dd,ul,ol,li,pre,form,fieldset,
+form,legend,button{
+    outline: 0;
+    vertical-align: baseline;
+    background: transparent;}
+
+body{width: 100vw; height: 100vh; font:12px/1.5 tahoma,arial,\5b8b\4f53,sans-serif;
+    background:#ffffff; font-family:"微软雅黑"; }
+
+/*购物车头部*/
+.head{width: 100vw;
+	height: 15vw;
+	font-size:6vw ;
+	line-height: 15vw;
+	text-align: center;
+	background: #fafafa;
+	background-image: url(../img/icon/back.png);
+	background-size: 6vw 6vw;
+	background-repeat:no-repeat;
+	background-position:3vw;
+}
+
+/*购物车是空的*/
+.nullcar{
+	width: 100vw;
+	height: 90vw;
+}
+.nullcar .notepic{
+	width: 32vw;
+	height: 32vw;
+	margin-top: 8vw;
+	margin-left: 34vw;
+}
+.nullcar .note{
+	width: 50vw;
+	height: 7vw;
+	margin-left: 25vw;
+	font-size: 4vw;
+	text-align: center;
+	line-height: 8vw;
+}
+
+
+
+
+
+
+
+

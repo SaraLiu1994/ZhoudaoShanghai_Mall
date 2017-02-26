@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Cache-Control" content="no-cache"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="format-detection" content="email=no"/>
+
+    <meta name="viewport" content="width=device-width">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="../css/redbagdetail.css">
+    <script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script>
+	<title>红包明细</title>
+</head>
+<body>
+	<!-- 红包明细头部 -->
+	<div class="head">
+        <button id="back"><img src="../img/icon/back.png"></button>
+		<p>红包明细</p>
+        <button id="myrecords">抽奖记录</button>
+	</div>
+    <!-- 红包总数 -->
+    <div class="score">
+        <p class="myscore">￥20.54</p>
+        <p class="note">可提现红包余额</p>
+        <button class="cash">立即提现</button>
+    </div>
+    <!-- 积分明细 -->
+    <div class="detailtitle">
+        <p>红包明细</p>   
+    </div>
+
+    <div class="detail">
+        <ul>
+            <li class="detaillist">
+                <div class="left">
+                    <p class="listname">分享</p>
+                    <p class="listtime">2016-4-27</p>
+                </div>
+                <div class="right">
+                    <p class="listscore">￥2.00</p>
+                </div>
+            </li>
+            <li class="detaillist">
+                <div class="left">
+                    <p class="listname">点赞</p>
+                    <p class="listtime">2016-4-27</p>
+                </div>
+                <div class="right">
+                    <p class="listscore">￥2.00</p>
+                </div>
+            </li>
+            <li class="detaillist">
+                <div class="left">
+                    <p class="listname">吐槽</p>
+                    <p class="listtime">2016-4-27</p>
+                </div>
+                <div class="right">
+                    <p class="listscore">￥2.00</p>
+                </div>
+            </li>
+            <li class="detaillist">
+                <div class="left">
+                    <p class="listname">收藏</p>
+                    <p class="listtime">2016-4-27</p>
+                </div>
+                <div class="right">
+                    <p class="listscore">￥2.00</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+</body>
+</html>
+<script type="text/javascript">
+    $(document).ready(function() {
+        //返回上一页
+        $('#back').click(function() {
+            window.location.href='';
+        });
+        //跳转到抽奖记录
+        $('#myrecords').click(function() {
+            window.location.href='lotteryrecord.html';
+        });
+    });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

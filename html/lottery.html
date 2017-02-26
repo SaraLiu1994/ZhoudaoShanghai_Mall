@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Cache-Control" content="no-cache"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="format-detection" content="email=no"/>
+
+    <meta name="viewport" content="width=device-width">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="../css/lottery.css">
+    <script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script>
+	<title>红包抽奖</title>
+</head>
+<body>
+	<!-- 兑换记录头部 -->
+	<div class="head">
+		<button id="back"><img src="../img/icon/back.png"></button>
+		<p>红包抽奖</p>
+	</div>
+
+	<!-- 抽奖图片 -->
+	<div class="pic">
+		<img src="../img/iphone6s.png">
+	</div>
+	<!-- 奖品名称 -->
+	<div class="nametitle">
+		<span>活动中</span>
+		<p class="name">iphone6s玫瑰金</p>
+		<p class="price">￥2.00</p>
+	</div>
+
+	<!-- 活动规则 -->
+	<div class="activity">
+		<div class="activitytitle">
+			<ul>
+				<li id="acin">活动介绍</li>
+				<li id="acru" class="select">活动规则</li>
+			</ul>
+		</div>
+		<!-- 活动介绍 -->
+		<div class="introduce">
+			<div class="introducetext">
+				<p>1.开奖日收盘时的上证指数x收盘时的深证指数x10000=12为数（指数为证交所公布数字为准）</p>
+				<p>2.将此12位数组倒序排列后（如首位是0，则直接抹去）除以开奖截止时间发放的抽奖号总数，得到的余数加1即为本次活动的最终中奖号码。</p>
+				<p>3.若您的抽奖号与最终中奖号码完全一致，即可获得本次活动的大奖！</p>
+			</div>
+		</div>
+		<!-- 活动规则 -->
+		<div class="rule">
+			<div class="ruletext">
+				<p>1.开奖日收盘时的上证指数x收盘时的深证指数x10000=12为数（指数为证交所公布数字为准）</p>
+				<p>2.将此12位数组倒序排列后（如首位是0，则直接抹去）除以开奖截止时间发放的抽奖号总数，得到的余数加1即为本次活动的最终中奖号码。</p>
+				<p>3.若您的抽奖号与最终中奖号码完全一致，即可获得本次活动的大奖！</p>	
+			</div>
+			<div class="example">
+				<p>例如：本次抽奖时间为1月17日~1月31日。2月1日进行开奖</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- 立即抽奖按钮 -->
+	<div class="tail">
+		<button class="golottery">立即抽奖</button>
+	</div>
+
+</body>
+</html>
+<script type="text/javascript">
+	$(document).ready(function($) {
+		// 切换活动介绍，活动规则
+		$("#acin").click(function() {
+			$(".activitytitle li").removeClass('select');
+			$(this).addClass('select');
+			$(".introduce").css('display', 'block');
+			$(".rule").css('display','none');
+		});
+		$("#acru").click(function() {
+			$(".activitytitle li").removeClass('select');
+			$(this).addClass('select');
+			$(".introduce").css('display', 'none');
+			$(".rule").css('display','block');
+		});
+
+		//返回至积分商城
+		$('#back').click(function() {
+			window.location.href='02.html';
+		});
+	});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

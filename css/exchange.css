@@ -1,0 +1,96 @@
+*{margin: 0;padding: 0;border: 0;list-style: none;}
+
+
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,
+dl,dt,dd,ul,ol,li,pre,form,fieldset,
+form,legend,button{
+    outline: 0;
+    vertical-align: baseline;
+    background: transparent;}
+
+body{width: 100vw; height: 100vh; font:12px/1.5 tahoma,arial,\5b8b\4f53,sans-serif;
+    background:#e8ebf1; font-family:"微软雅黑"; }
+
+/*兑换记录*/
+.head{width: 100vw;
+	height: 15vw;
+	font-size:6vw ;
+	line-height: 15vw;
+	text-align: center;
+	background: #fafafa;
+/*	background-image: url(../img/icon/back.png);
+	background-size: 6vw 6vw;
+	background-repeat:no-repeat;
+	background-position:3vw;*/
+}
+.head #back {
+	width: 6vw;
+	height: 6vw;
+	position: absolute;
+	top: 4vw;
+	left: 3vw;
+}
+.head #back img{
+	width: 6vw;
+	height: 6vw;
+}
+.exchange{
+	width: 100vw;
+	height: auto;
+}
+.exchange .list{
+	width: 100vw;
+	height: 33vw;
+	background: #ffffff;
+	margin-bottom: 3vw;
+}
+.exchange .list .pic{
+	width: 27vw;
+	height: 23vw;
+	margin-left: 5vw;
+	padding-top: 5vw;
+	float: left;
+}
+.exchange .list .pic img{
+	width: 27vw;
+	height: auto;
+	/*相同效果*/
+	/*line-height: 23vw;*/
+	text-align: middle;
+}
+.exchange .list .detail{
+	width: 50vw;
+	height: 27vw;
+	text-align: right;
+	margin-right: 3vw;
+	margin-top: 5vw;
+	float: right;
+}
+.exchange .list .detail .name{
+	width: 50vw;
+	height: 9vw;
+	font-size: 5vw;
+	line-height: 9vw;
+}
+.exchange .list .detail .score{
+	width: 50vw;
+	height: 9vw;
+	font-size: 4vw;
+	line-height: 9vw;
+	color: #696969;
+}
+.exchange .list .detail .time{
+	width: 50vw;
+	height: 9vw;
+	font-size: 3vw;
+	line-height: 9vw;
+	color: #696969;
+}
+
+
+
+
+
+
+
+

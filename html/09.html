@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+	<link rel="stylesheet" href="../css/bootstrap.css" type="text/css">
+	<link rel="stylesheet" href="../css/style.css" type="text/css">
+   <script type="text/javascript" src="../js/jquery.min.js"></script>
+	<title>09加入购物车</title>
+</head>
+<body>
+	<div class="top-bar">
+    <div class="top-bar-return">
+       <a href="javascript:history.back(-1)"><img src="../img/icon/return.png"></a>
+    </div>
+    <div class="top-bar-title">加入购物车</div>
+ 	</div>
+  <div class="slider">
+    <ul>
+      <li><a href="#" target="_blank"><img src="../img/08/pinkrose.png" alt=""></a></li>
+      <li><a href="#" target="_blank"><img src="../img/08/whiteRose.png" alt=""></a></li>
+      <li><a href="#" target="_blank"><img src="../img/08/showTicket.png" alt=""></a></li>
+      <li><a href="#" target="_blank"><img src="../img/08/diyGF.png" alt=""></a></li>
+      <li><a href="#" target="_blank"><img src="../img/08/cake.png" alt=""></a></li>
+    </ul>
+  </div>
+ 	<div class="container-fluid">
+    <div class="row" style="margin-top:10px">
+      <div class="col-md-2 col-sm-2 col-xs-2">
+        <img src="../img/08/pinkrose.png" style="width:100%">
+      </div>
+      <div class="col-md-10 col-sm-10 col-xs-10">
+        <div class="row">
+          <span style="font-size:1.3em">康乃馨 感恩母亲节</span>
+        </div>
+        <div class="row">
+          <span class="redColor" style="font-size:1.0em">&yen;79.00</span>
+          <span class="lightGrayColor" style="font-size:1.0em">&nbsp;&nbsp;&nbsp;<s>&yen;79.00</s></span>
+        </div>
+      </div>
+    </div> 
+    <div class="row" style="margin-top:15%;">
+      <span class="greyColor" style="font-size:1.3em">颜色分类</span>
+    </div>
+    <div class="row" style="margin-left:5%">
+      <div class="col-md-4 col-sm-4 col-xs-4 ">
+        <div class="row"><span class="greyColor" style="font-size:0.9em">19枝粉康咖啡盒</span></div>
+        <div class="row"><span class="greyColor" style="font-size:0.9em">19枝粉康咖啡盒</span></div>
+      </div>
+      <div class="col-md-4 col-sm-4 col-xs-4 ">
+        <div class="row"><span class="greyColor" style="font-size:0.9em">19枝粉康咖啡盒</span></div>
+        <div class="row"><span class="greyColor" style="font-size:0.9em">19枝粉康咖啡盒</span></div>
+      </div>
+      <div class="col-md-4 col-sm-4 col-xs-4 ">
+        <div class="row"><span class="greyColor" style="font-size:0.9em">19枝粉康咖啡盒</span></div>
+        <div class="row"><span class="greyColor" style="font-size:0.9em">19枝粉康咖啡盒</span></div>
+      </div>
+    </div>
+    <div class="row" style="margin-top:15%;">
+      <span class="greyColor" style="font-size:1.3em;line-height:2em">数量</span>
+      <span class="lt-rt">
+        <input type="button" class="minus"  value="-">
+        <input type="text" class="result" value="0">
+        <input type="button" class="add" value="+">
+      </span>
+    </div>
+
+    <div class="row" style="margin-top:5%;">
+      <center>
+        <div class="col-md-12 col-sm-12 col-xs-12" style="">
+          <a href="" class="btn1 redBtnShop" id="addToShoppingCar">加入购物车</a>
+        </div>
+      </center>
+    </div>
+
+  </div>
+  <script type="text/javascript" src="../js/Carousel.js"></script>
+  <script>
+      $(".slider").yxMobileSlider({width:300,height:250,during:4000})
+  </script>
+  <script type="text/javascript" src="../js/Adaptive.js"></script>
+  <!-- <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script> -->
+  <script> 
+    $(function(){ 
+        $(".add").click(function(){
+          var t=$(this).parent().find('input[class*=result]'); 
+          t.val(parseInt(t.val())+1);
+        })
+         
+        $(".minus").click(function(){ 
+          var t=$(this).parent().find('input[class*=result]'); 
+          t.val(parseInt(t.val())-1);
+          if(parseInt(t.val())<0){ 
+          t.val(0); 
+        } 
+      })
+    }) 
+    $(function(){
+      $("#addToShoppingCar").click(function(){
+        var t=$(".result").val();
+        if(t>0){
+          window.location.href="10.html";
+        }
+        else{
+          alert("请选择数量和颜色分类");
+        }
+      })
+    })
+  </script> 
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Cache-Control" content="no-cache"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="format-detection" content="email=no"/>
+
+    <meta name="viewport" content="width=device-width">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="../css/myscore.css">
+    <script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script>
+	<title>我的积分</title>
+</head>
+<body>
+	<!-- 购物车头部 -->
+	<div class="head">
+        <button id="back"><img src="../img/icon/back.png"></button>
+		<p>我的积分</p>
+        <button id="myrecords">兑换记录</button>
+	</div>
+    <!-- 提出商城有新品 -->
+    <p class="note">商城又出新品了，快去看看吧！</p>
+    <!-- 积分总数 -->
+    <div class="score">
+        <p class="sumscore">积分总数</p>
+        <p class="myscore">2000</p>
+    </div>
+    <!-- 积分明细 -->
+    <div class="detailtitle">
+        <p>积分明细</p>   
+    </div>
+
+    <div class="detail">
+        <ul>
+            <li class="detaillist">
+                <div class="left">
+                    <p class="listname">分享</p>
+                    <p class="listtime">2016-4-27</p>
+                </div>
+                <div class="right">
+                    <p class="listscore">+ 200</p>
+                </div>
+            </li>
+            <li class="detaillist">
+                <div class="left">
+                    <p class="listname">点赞</p>
+                    <p class="listtime">2016-4-27</p>
+                </div>
+                <div class="right">
+                    <p class="listscore">+ 200</p>
+                </div>
+            </li>
+            <li class="detaillist">
+                <div class="left">
+                    <p class="listname">吐槽</p>
+                    <p class="listtime">2016-4-27</p>
+                </div>
+                <div class="right">
+                    <p class="listscore">+ 200</p>
+                </div>
+            </li>
+            <li class="detaillist">
+                <div class="left">
+                    <p class="listname">收藏</p>
+                    <p class="listtime">2016-4-27</p>
+                </div>
+                <div class="right">
+                    <p class="listscore">+ 200</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+</body>
+</html>
+<script type="text/javascript">
+    $(document).ready(function() {
+        // 跳转到兑换记录
+        $('#myrecords').click(function() {
+            //跳转到有兑换记录
+            // window.location.href= 'exchange.html';
+            //跳转到无兑换记录
+            window.location.href= '07.html';
+        });
+        //返回积分商城
+        $('#back').click(function() {
+            window.location.href= '02.html';
+        });
+    });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

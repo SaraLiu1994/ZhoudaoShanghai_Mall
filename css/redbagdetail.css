@@ -1,0 +1,159 @@
+*{margin: 0;padding: 0;border: 0;list-style: none;}
+
+
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,
+dl,dt,dd,ul,ol,li,pre,form,fieldset,
+form,legend,button{
+    outline: 0;
+    vertical-align: baseline;
+    background: transparent;}
+
+body{width: 100vw; height: 100vh; font:12px/1.5 tahoma,arial,\5b8b\4f53,sans-serif;
+    background:#ffffff; font-family:"微软雅黑"; }
+
+/*购物记录*/
+.head{width: 100vw;
+	height: 15vw;
+	font-size:6vw ;
+	line-height: 15vw;
+	text-align: center;
+	background: #fafafa;
+/*	background-image: url(../img/icon/back.png);
+	background-size: 6vw 6vw;
+	background-repeat:no-repeat;
+	background-position:3vw;*/
+}
+.head #back {
+	width: 6vw;
+	height: 6vw;
+	position: absolute;
+	top: 4vw;
+	left: 3vw;
+}
+.head #back img{
+	width: 6vw;
+	height: 6vw;
+}
+.head #myrecords{
+	position: absolute;
+	right: 3vw;
+	top: 0vw;
+	line-height: 15vw;
+	font-size: 5vw;
+	color: #696969;
+}
+
+/*积分总数*/
+.score{
+	width: 100vw;
+	height: 51vw;
+	/*background: #ff0000;*/
+	background-image: url(../img/redbackground.jpg);
+	background-size: 100vw 51vw;
+	color: #ffffff;
+}
+.score .myscore{
+	width: 100vw;
+	height: 8vw;
+	font-size: 8vw;
+	line-height: 8vw;
+	padding-top: 10vw;
+	text-align: center;
+}
+.score .note{
+	width: 100vw;
+	height: 8vw;
+	font-size: 3vw;
+	line-height: 8vw;
+	text-align: center;
+}
+.score .cash{
+	width: 56vw;
+	height: 9vw;
+	margin-left: 22vw;
+	margin-top: 5vw;
+	border: 1px solid #ffffff;
+	text-align: center;
+	color: #ffffff;
+	font-size: 5vw;
+	border-radius: 1px;
+
+}
+
+/*红包明细*/
+.detailtitle{
+	width: 100vw;
+	height: 10vw;
+	font-size: 4.5vw;
+	background:#e8ebf1;
+	position: relative;
+}
+.detailtitle p{
+	height: 6vw;
+	line-height: 6vw;
+	position: absolute;
+	top: 2vw;
+	padding-left: 4vw;
+	border-left: 3px solid #ff0000;
+	margin-left: 4vw;
+	color: #696969;
+}
+.detaillist{
+	width: 100vw;
+	height: 16vw;
+	border-bottom: 1px solid #dcdcdc;
+}
+.detaillist .left{
+	float: left;
+	width: 71vw;
+	height: 16vw;
+	margin-left: 9vw;
+}
+.detaillist .left .listname{
+	width: 75vw;
+	height: 5vw;
+	margin-top: 3vw;
+	font-size: 4.5vw;
+	line-height: 5vw;
+	color: #696969;
+}
+.detaillist .left .listtime{
+	width: 75vw;
+	height: 3vw;
+	line-height: 3vw;
+	margin-top: 2vw;
+	color: #cccccc;
+}
+
+
+
+.detaillist .right{
+	float: right;
+	width: 15vw;
+	height: 16vw;
+	line-height: 16vw;
+	margin-right: 5vw;
+	text-align: right;
+}
+.detaillist .right .listscore{
+	font-size: 4vw;
+	color: #ff0000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

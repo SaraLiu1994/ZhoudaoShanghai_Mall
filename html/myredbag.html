@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Cache-Control" content="no-cache"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="format-detection" content="email=no"/>
+
+    <meta name="viewport" content="width=device-width">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="../css/myredbag.css">
+    <script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script>
+	<title>我的红包</title>
+</head>
+<body>
+	<!-- 我的红包头部 -->
+	<div class="head">
+		<p>我的红包</p>
+	</div>
+    <!-- 点击领取红包 -->
+    <div class="clickredbag"></div>
+    <div class="note">
+        <p class="notetitle">分享新闻领红包</p>
+        <p class="notecon">分享<span>新闻</span>、<span>图片</span>、<span>评论</span>等任意内容</p>
+        <p class="notecon">每天都有机会领取现金红包、积分，更有大奖等你拿</p>
+    </div> 
+
+    <!-- 社交APP分享 -->
+    <div class="share">
+        <div class="sharecon">
+            <ul>
+                <li>
+                    <div class="list">
+                        <div class="left">
+                            <img src="../img/user1.jpg">
+                        </div>
+                        <div class="right">
+                            <p class="goodnum" click='0'>235</p>
+                            <p class="username">半暖时光</p>
+                            <p class="time">01-28 20:34</p>
+                            <div class="con">上海这是又要堵车的节奏啊，悲剧</div>
+                        </div>        
+                    </div>
+                </li>
+                <li>
+                    <div class="list">
+                        <div class="left">
+                            <img src="../img/user2.jpg">
+                        </div>
+                        <div class="right">
+                            <p class="goodnum" click='0'>212</p>
+                            <p class="username">自我无邪</p>
+                            <p class="time">01-28 20:34</p>
+                            <p class="con">上海这是又要堵车的节奏啊，悲剧</p>
+                        </div>        
+                    </div>
+                </li>
+                <li>
+                    <div class="list">
+                        <div class="left">
+                            <img src="../img/user3.jpg">
+                        </div>
+                        <div class="right">
+                            <p class="goodnum" click='0'>212</p>
+                            <p class="username">岁月静好</p>
+                            <p class="time">01-28 20:34</p>
+                            <p class="con">上海这是又要堵车的节奏啊，悲剧</p>
+                        </div>        
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="shareapp">
+            <button id="QQ">
+                <img src="../img/QQ.png">
+                <p>QQ</p>
+            </button>
+            <button id="wechat">
+                <img src="../img/wechat.png">
+                <p>微信</p>
+            </button>
+            <button id="sina">
+                <img src="../img/sina.png">
+                <p>微博</p>
+            </button>
+        </div>
+    </div>
+    
+</body>
+</html>
+
+
+<script type="text/javascript">
+    $(document).ready(function() {
+
+
+        //点赞和取消点赞
+        $('.goodnum').click(function() {
+            if($(this).attr('click')==0){
+                $(this).css({
+                    'background-image': 'url(../img/icon/like2.png)',
+                    'color': '#ff0000'
+                });
+                $(this).attr('click', '1');
+                var tmp=parseInt($(this).text());
+                var num=tmp+1;
+                console.log(num);
+                $(this).text(num);
+            }
+            else{
+                $(this).css({
+                    'background-image': 'url(../img/icon/like1.png)',
+                    'color': '#696969'
+                });
+                $(this).attr('click', '0');
+                var tmp=parseInt($(this).text());
+                var num=tmp-1;
+                console.log(num);
+                $(this).text(num);
+            }
+        });
+    });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

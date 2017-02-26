@@ -1,0 +1,186 @@
+*{margin: 0;padding: 0;border: 0;list-style: none;}
+
+
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,
+dl,dt,dd,ul,ol,li,pre,form,fieldset,
+form,legend,button{
+    outline: 0;
+    vertical-align: baseline;
+    background: transparent;}
+
+body{width: 100vw; height: 100vh; font:12px/1.5 tahoma,arial,\5b8b\4f53,sans-serif;
+    background:#e8ebf1; font-family:"微软雅黑"; }
+
+/*购物记录*/
+.head{width: 100vw;
+	height: 15vw;
+	font-size:6vw ;
+	line-height: 15vw;
+	text-align: center;
+	background: #fafafa;
+	background-image: url(../img/icon/back.png);
+	background-size: 6vw 6vw;
+	background-repeat:no-repeat;
+	background-position:3vw;
+}
+/*购物列表*/
+.goodslist{
+	width: 100vw;
+	height: auto;
+}
+.goodslist .goods{
+	width: 100vw;
+	height: 25vw;
+	margin-top: 1vw;
+	background: #ffffff;
+}
+/*商品图片*/
+.goodslist .goods .goodsleft{
+	width: 21vw;
+	height: 15vw;
+	float: left;
+	margin-left: 3vw;
+	margin-top: 5vw;
+}
+.goodslist .goods .goodsleft .checkbox{
+	width: 4vw;
+	height: 4vw;
+	margin-top: 5.5vw;
+	margin-right: 2vw;
+	float: left;
+}
+.goodslist .goods .goodsleft img{
+	width: 15vw;
+	height: 15vw;
+	float: left;
+}
+/*商品描述*/
+.goodslist .goods .goodsmiddle{
+	width: 48vw;
+	height: 15vw;
+	float:left;
+	margin-top: 5vw;
+	margin-left: 3vw; 
+}
+.goodslist .goods .goodsmiddle .name{
+	height: 5vw;
+	font-size: 4.5vw;
+	line-height: 5vw;
+}
+.goodslist .goods .goodsmiddle .category{
+	height: 5vw;
+	font-size: 3vw;
+	line-height: 5vw;
+	color: #808080;
+}
+.goodslist .goods .goodsmiddle .youfei{
+	height: 5vw;
+	font-size: 3vw;
+	line-height: 5vw;
+	color: #808080;
+}
+/*商品价格及数量*/
+.goodslist .goods .goodsright{
+	width: 22vw;
+	height: 15vw;
+	float: left;
+	margin-top: 5vw;
+	margin-right: 3vw;
+}
+.goodslist .goods .goodsright .price{
+	height: 6vw;
+	line-height: 6vw;
+	font-size: 4.5vw;
+	color: #ff0000;
+	text-align: right;
+	margin-top: 1vw;
+}
+.goodslist .goods .goodsright  .quantity{
+	height: 6vw;
+	line-height: 6vw;
+	font-size: 3vw;
+	color: #808080;
+	text-align: right;
+	margin-top: 2vw;
+}
+
+
+/*结算*/
+.settle{
+	width: 100vw;
+	height: 14vw;
+	background: #ffffff;
+	position: absolute;
+	bottom: 0;
+}
+/*全选按钮*/
+.settle .settleleft{
+	width: 10vw;
+	height: 8vw;
+	margin-left: 3vw;
+	margin-top: 3vw;
+	float: left;
+}
+.settle .settleleft .checkbox{
+	height: 4vw;
+	width: 4vw;
+	margin-left: 3vw;
+}
+.settle .settleleft p{
+	width: 10vw;
+	height: 4vw;
+	font-size: 3vw;
+	line-height: 4vw;
+	text-align: center;
+}
+/*结算详细*/
+.settle .settlemiddle{
+	width: 58vw;
+	height: 6vw;
+	margin:4vw 3vw;
+	float: left;
+	text-align: right;
+}
+.settle .settlemiddle p{
+	float: right;
+}
+.settle .settlemiddle .amount{
+	font-size: 3vw;
+	line-height: 6vw;
+}
+.settle .settlemiddle .amount1{
+	font-size: 4vw;
+	color: #ff0000;
+	line-height: 6vw;
+}
+.settle .settlemiddle .sumyoufei{
+	font-size: 2.5vw;
+	color: #808080;
+	line-height: 6vw;
+}
+
+/*下一步按钮*/
+.settle .settleright{
+	width: 23vw;
+	height: 8vw;
+	float: left;
+}
+.settle .settleright .next{
+	width: 20vw;
+	height: 8vw;	
+	margin-top: 3vw;
+	margin-right: 3vw;
+	color: #ffffff;
+	background: #ff0000;
+	border-radius: 3px;
+}
+
+
+
+
+
+
+
+
+
+

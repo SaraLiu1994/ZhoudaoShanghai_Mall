@@ -1,0 +1,33 @@
+body {
+	/*background-color: #fff;*/
+	padding: 0;
+	margin: 0;
+}
+
+.top-bar {
+	background-color: #fff;
+	/*box-shadow: 0 -1px 8px #444;*/
+	float: left;
+	padding: 10px 0 10px;
+	width: 100%
+}
+
+.top-bar-return {
+	float: left;
+	width: 10%;
+	line-height: 28px;
+	text-align: center
+}
+
+.top-bar-return img {
+	vertical-align: middle;
+	width: 20px
+}
+
+.top-bar-title {
+	float: left;
+	width: 80%;
+	text-align: center;
+	font-size: 1.3em;
+	font-family: '黑体'
+}

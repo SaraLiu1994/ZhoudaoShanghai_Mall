@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Cache-Control" content="no-cache"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="format-detection" content="email=no"/>
+
+    <meta name="viewport" content="width=device-width">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="../css/shopcar.css">
+    <script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script>
+	<title>购物车有东西</title>
+</head>
+<body>
+	<!-- 购物车头部 -->
+	<div class="head">
+		<p>购物车</p>
+	</div>
+    <!-- 购物车列表 -->
+    <div class="goodslist">
+        <ul>
+            <li class="goods" id="goods1">
+                <!-- 商品图片 -->
+                <div class="goodsleft">
+                    <input class="checkbox" id="checkbox1" type="checkbox" >
+                    <img src="../img/flower.jpg">
+                </div>
+                <!-- 商品描述 -->
+                <div class="goodsmiddle">
+                    <p class="name">康乃馨 感恩母亲节</p>
+                    <p class="category">颜色分类:19枝粉康咖啡盒</p>
+                    <p class="youfei">邮费:￥6.00</p>
+                </div>
+                <!-- 商品价格及数量 -->
+                <div class="goodsright">
+                    <p class="price">￥<span>79.00</span></p>
+                    <p class="quantity">×<span>1</span></p>
+                </div>
+            </li>
+            <li class="goods" id="goods2">
+                <!-- 商品图片 -->
+                <div class="goodsleft">
+                    <input class="checkbox" id="checkbox2" type="checkbox" >
+                    <img src="../img/flower.jpg">
+                </div>
+                <!-- 商品描述 -->
+                <div class="goodsmiddle">
+                    <p class="name">康乃馨 感恩母亲节</p>
+                    <p class="category">颜色分类:19枝粉康咖啡盒</p>
+                    <p class="youfei">邮费:￥6.00</p>
+                </div>
+                <!-- 商品价格及数量 -->
+                <div class="goodsright">
+                    <p class="price">￥<span>79.00</span></p>
+                    <p class="quantity">×<span>1</span></p>
+                </div>
+            </li>
+            <li class="goods" id="goods3">
+                <!-- 商品图片 -->
+                <div class="goodsleft">
+                    <input class="checkbox" id="checkbox3" type="checkbox">
+                    <img src="../img/flower.jpg">
+                </div>
+                <!-- 商品描述 -->
+                <div class="goodsmiddle">
+                    <p class="name">康乃馨 感恩母亲节</p>
+                    <p class="category">颜色分类:19枝粉康咖啡盒</p>
+                    <p class="youfei">邮费:￥6.00</p>
+                </div>
+                <!-- 商品价格及数量 -->
+                <div class="goodsright">
+                    <p class="price">￥<span>79.00</span></p>
+                    <p class="quantity">×<span>1</span></p>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <!-- 购车车结算 -->
+    <div class="settle">
+        <!-- 全选按钮 -->
+        <div class="settleleft">
+        <button>
+            
+        </button>
+            <input class="checkbox" id="checkboxall" type="checkbox">
+            <p>全选</p> 
+        </div>
+        <!-- 结算详细 -->
+        <div class="settlemiddle">
+            <p class="sumyoufei">(含邮费￥<span class="sumyoufei1">0.00</span>)</p>
+            <p class="amount">合计:<span class="amount1">￥237.0</span></p>
+
+        </div>
+        <!-- 下一步按钮 -->
+        <div class="settleright">
+            <button class="next">下一步</button>
+        </div>
+    </div>
+
+</body>
+</html>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+
+        var flag=0;//记录全选按钮
+        // 全选按钮的全选和取消全选功能
+        $("#checkboxall").click(function() {
+            if (flag==0) {
+                $(':checkbox').prop('checked',true); 
+                flag=1;
+                // console.log(flag,$("#checkbox1").prop('checked'));
+            }
+            else{
+                flag=0;
+                $(':checkbox').prop('checked',false); 
+                // console.log(flag,$("#checkbox1").prop('checked'));
+            }
+        });
+
+        // function Isallchecked(){
+        //     if($("#checkboxall").prop('checked')==true){
+        //         var cblist=$(".checkbox");
+        //         for (var i = 0; i < cblist.length; i++) {
+        //             if(cblist[i].checked=='true'){
+        //                 $("#checkboxall").prop('checked', true);
+        //             }
+        //         }
+        //     }
+        // } 
+
+        // $(".checkbox").click(function(){
+        //     Isallchecked();
+        // });  
+
+  
+
+  
+  
+    });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

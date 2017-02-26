@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Cache-Control" content="no-cache"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="format-detection" content="email=no"/>
+
+    <meta name="viewport" content="width=device-width">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="../css/voting.css">
+    <link rel="stylesheet" type="text/css" href="../css/iconfont.css">
+    <script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script>
+	<title>我要投票</title>
+</head>
+<body>
+	<!-- 我要投票头部 -->
+	<div class="head">
+		<p>我要投票</p>
+	</div>
+    <div class="border">     </div>
+    <!-- 投票话题 -->
+    <div class="title">
+        <p class="con">我参与了<span class="topic">@明星权力榜</span>发起的投票【#明星权力榜人气榜#四月份内地最受欢迎女演员】，我投给了“郑爽”这个选项。你也快来表态吧~</p>
+        <div class="subtitle">
+            <img class="starpic" src="../img/star1.jpeg">
+            <div class="middle">
+                <p>#明星权利榜#四月份内地最受欢迎女演员</p>
+                <p>下载周到APP为你喜欢的明星投票</p>
+                <p>参与人数：<span class="num">23406</span></p>                
+            </div>
+            <div class="right">
+                <button class="vote">
+                    <img src="../img/vote.jpg">
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 投票选项 -->
+    <div class="votenote">
+        <p class="note1">投票选项</p>
+        <p class="note2">最多选3项</p>
+    </div>
+    <div class="votelist">
+        <ul>
+            <li>
+                <p>迪丽热巴</p>
+                <input class="checkbox" name="ck" type="checkbox" id="ck1">
+            </li>
+            <li>
+                <p>范冰冰</p>
+                <input class="checkbox" name="ck" type="checkbox" id="ck2">
+            </li>
+            <li>
+                <p>高圆圆</p>
+                <input class="checkbox" name="ck" type="checkbox" id="ck3">
+            </li>
+            <li>
+                <p>李沁</p>
+                <input class="checkbox" name="ck" type="checkbox" id="ck4">
+            </li>
+            <li>
+                <p>刘诗诗</p>
+                <input class="checkbox" name="ck" type="checkbox" id="ck5">
+            </li>
+            <li>
+                <p>刘涛</p>
+                <input class="checkbox" name="ck" type="checkbox" id="ck6">
+            </li>
+        </ul>
+    </div>
+
+    <button class="voting">我要投票</button>
+  
+</body>
+</html>
+
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('input[type=checkbox]').click(function() {
+        //checkbox的input标签点击事件
+            $("input[name='ck']").attr('disabled', true);
+            //设置name为ck的input标签的属性为true,表示不可选
+            if ($("input[name='ck']:checked").length >= 3) {//选中个数大于3
+                $("input[name='ck']:checked").attr('disabled', false);
+            } 
+            else {
+                $("input[name='ck']").attr('disabled', false);
+            }
+        });
+    });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

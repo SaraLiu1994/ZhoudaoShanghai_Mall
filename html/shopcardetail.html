@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Cache-Control" content="no-cache"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="format-detection" content="email=no"/>
+
+    <meta name="viewport" content="width=device-width">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="../css/shopcardetail.css">
+    <script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script>
+	<title>购物记录</title>
+</head>
+<body>
+	<!-- 购物记录头部 -->
+	<div class="head">
+		<button id="back"><img src="../img/icon/back.png"></button>
+		<p>购物记录</p>
+	</div>
+	<!-- 购物记录待发货 -->
+	<div class="title">
+		<ul>
+			<li class="select" id="all">全部</li>
+			<li id="payment">待付款</li>
+			<li id="overhang">待发货</li>
+			<li id="receipt">待收货</li>
+			<li id="assess">待评价</li>
+		</ul>
+	</div>
+
+	<!-- 全部订单 -->
+	<div class="all_detail">
+		<div class="detail">
+			<!-- 订单编号 -->
+			<div class="detail1">
+				<p class="order">订单编号:</p>
+				<p class="number">4564525884</p>
+				<p class="wait">交易成功</p>
+			</div>
+			<!-- 商品图片详情 -->
+			<div class="detail2">
+				<!-- 商品图片 -->
+				<div class="left">
+					<img src="../img/flower.jpg">
+				</div>
+				<!-- 商品描述 -->
+				<div class="middle">
+					<p class="name">康乃馨 感恩母亲节</p>
+					<p class="category">颜色分类:19枝粉康咖啡盒</p>
+				</div>
+				<!-- 商品价格及数量 -->
+				<div class="right">
+					<p class="price">￥<span>79.00</span></p>
+					<p class="quantity">×<span>1</span></p>
+				</div>
+			</div>
+			<!-- 商品价格 -->
+			<div class="detail3">
+				<p class="price3">(含运费￥<span class="freight">0.00</span>)</p>
+				<p class="price2">合计:￥<span class="amount">79.00</span></p>
+				<p class="price1">共<span>1</span>件商品</p>
+			</div>
+			<!-- 按钮查看详情 -->
+			<div class="detail4">
+				<button class="goassess">评价</button>
+			</div>
+		</div>
+
+		<div class="detail">
+			<!-- 订单编号 -->
+			<div class="detail1">
+				<p class="order">订单编号:</p>
+				<p class="number">4564525884</p>
+				<p class="wait">交易成功</p>
+			</div>
+			<!-- 商品图片详情 -->
+			<div class="detail2">
+				<!-- 商品图片 -->
+				<div class="left">
+					<img src="../img/flower.jpg">
+				</div>
+				<!-- 商品描述 -->
+				<div class="middle">
+					<p class="name">康乃馨 感恩母亲节</p>
+					<p class="category">颜色分类:19枝粉康咖啡盒</p>
+				</div>
+				<!-- 商品价格及数量 -->
+				<div class="right">
+					<p class="price">￥<span>79.00</span></p>
+					<p class="quantity">×<span>1</span></p>
+				</div>
+			</div>
+			<!-- 商品价格 -->
+			<div class="detail3">
+				<p class="price3">(含运费￥<span class="freight">0.00</span>)</p>
+				<p class="price2">合计:￥<span class="amount">79.00</span></p>
+				<p class="price1">共<span>1</span>件商品</p>
+			</div>
+			<!-- 按钮查看详情 -->
+			<div class="detail4">
+				<button class="goassess">评价</button>
+			</div>
+		</div>
+
+
+	</div>
+
+
+	<!-- 待付款订单 -->
+	<div class="payment_detail">
+		<div class="detail">
+			<!-- 订单编号 -->
+			<div class="detail1">
+				<p class="order">订单编号:</p>
+				<p class="number">4564525884</p>
+				<p class="wait">待付款</p>
+			</div>
+			<!-- 商品图片详情 -->
+			<div class="detail2">
+				<!-- 商品图片 -->
+				<div class="left">
+					<input class="checkbox" type="checkbox" name="default" value="default">
+					<img src="../img/flower.jpg">
+				</div>
+				<!-- 商品描述 -->
+				<div class="middle">
+					<p class="name">康乃馨 感恩母亲节</p>
+					<p class="category">颜色分类:19枝粉康咖啡盒</p>
+				</div>
+				<!-- 商品价格及数量 -->
+				<div class="right">
+					<p class="price">￥<span>79.00</span></p>
+					<p class="quantity">×<span>1</span></p>
+				</div>
+			</div>
+			<!-- 商品价格 -->
+			<div class="detail3">
+				<p class="price3">(含运费￥<span class="freight">0.00</span>)</p>
+				<p class="price2">合计:￥<span class="amount">79.00</span></p>
+				<p class="price1">共<span>1</span>件商品</p>
+			</div>
+			<!-- 按钮查看详情 -->
+			<div class="detail4">
+				<button class="gopayment">马上付款</button>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- 待发货订单 -->
+	<div class="overhang_detail">
+		<div class="detail">
+			<!-- 订单编号 -->
+			<div class="detail1">
+				<p class="order">订单编号:</p>
+				<p class="number">4564525884</p>
+				<p class="wait">待发货</p>
+			</div>
+			<!-- 商品图片详情 -->
+			<div class="detail2">
+				<!-- 商品图片 -->
+				<div class="left">
+					<input class="checkbox" type="checkbox" name="default" value="default">
+					<img src="../img/flower.jpg">
+				</div>
+				<!-- 商品描述 -->
+				<div class="middle">
+					<p class="name">康乃馨 感恩母亲节</p>
+					<p class="category">颜色分类:19枝粉康咖啡盒</p>
+				</div>
+				<!-- 商品价格及数量 -->
+				<div class="right">
+					<p class="price">￥<span>79.00</span></p>
+					<p class="quantity">×<span>1</span></p>
+				</div>
+			</div>
+			<!-- 商品价格 -->
+			<div class="detail3">
+				<p class="price3">(含运费￥<span class="freight">0.00</span>)</p>
+				<p class="price2">合计:￥<span class="amount">79.00</span></p>
+				<p class="price1">共<span>1</span>件商品</p>
+			</div>
+			<!-- 按钮查看详情 -->
+			<div class="detail4">
+				<button class="watchdetail">查看详情</button>
+			</div>
+		</div>
+	</div>	
+
+
+	<!-- 待收货订单 -->
+	<div class="receipt_detail">
+		<div class="detail">
+			<!-- 订单编号 -->
+			<div class="detail1">
+				<p class="order">订单编号:</p>
+				<p class="number">4564525884</p>
+				<p class="wait">待收货</p>
+			</div>
+			<!-- 商品图片详情 -->
+			<div class="detail2">
+				<!-- 商品图片 -->
+				<div class="left">
+					<input class="checkbox" type="checkbox" name="default" value="default">
+					<img src="../img/flower.jpg">
+				</div>
+				<!-- 商品描述 -->
+				<div class="middle">
+					<p class="name">康乃馨 感恩母亲节</p>
+					<p class="category">颜色分类:19枝粉康咖啡盒</p>
+				</div>
+				<!-- 商品价格及数量 -->
+				<div class="right">
+					<p class="price">￥<span>79.00</span></p>
+					<p class="quantity">×<span>1</span></p>
+				</div>
+			</div>
+			<!-- 商品价格 -->
+			<div class="detail3">
+				<p class="price3">(含运费￥<span class="freight">0.00</span>)</p>
+				<p class="price2">合计:￥<span class="amount">79.00</span></p>
+				<p class="price1">共<span>1</span>件商品</p>
+			</div>
+			<!-- 按钮查看详情 -->
+			<div class="detail4">
+				<button class="gosure">确认收货</button>
+				<button class="watchlogistics">查看物流</button>			
+			</div>
+		</div>
+	</div>
+
+
+	<!-- 待评价订单 -->
+	<div class="assess_detail">
+		<div class="detail">
+			<!-- 订单编号 -->
+			<div class="detail1">
+				<p class="order">订单编号:</p>
+				<p class="number">4564525884</p>
+				<p class="wait">待评价</p>
+			</div>
+			<!-- 商品图片详情 -->
+			<div class="detail2">
+				<!-- 商品图片 -->
+				<div class="left">
+					<img src="../img/flower.jpg">
+				</div>
+				<!-- 商品描述 -->
+				<div class="middle">
+					<p class="name">康乃馨 感恩母亲节</p>
+					<p class="category">颜色分类:19枝粉康咖啡盒</p>
+				</div>
+				<!-- 商品价格及数量 -->
+				<div class="right">
+					<p class="price">￥<span>79.00</span></p>
+					<p class="quantity">×<span>1</span></p>
+				</div>
+			</div>
+			<!-- 商品价格 -->
+			<div class="detail3">
+				<p class="price3">(含运费￥<span class="freight">0.00</span>)</p>
+				<p class="price2">合计:￥<span class="amount">79.00</span></p>
+				<p class="price1">共<span>1</span>件商品</p>
+			</div>
+			<!-- 按钮查看详情 -->
+			<div class="detail4">
+				<button class="goassess">评价</button>
+				<button class="watchlogistics">查看物流</button>			
+			</div>
+		</div>
+	</div>
+
+
+</body>
+</html>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+
+		// 切换不同类别订单
+		$("#all").click(function() {
+			$(".title li").removeClass('select');
+			$(this).addClass('select');
+			$(".all_detail").css('display', 'block');
+			$(".payment_detail").css('display','none');
+			$(".overhang_detail").css('display','none');
+			$(".receipt_detail").css('display','none');
+			$(".assess_detail").css('display','none');
+		});
+		$("#payment").click(function() {
+			$(".title li").removeClass('select');
+			$(this).addClass('select');
+			$(".all_detail").css('display', 'none');
+			$(".payment_detail").css('display','block');
+			$(".overhang_detail").css('display','none');
+			$(".receipt_detail").css('display','none');
+			$(".assess_detail").css('display','none');
+		});
+		$("#overhang").click(function() {
+			$(".title li").removeClass('select');
+			$(this).addClass('select');
+			$(".all_detail").css('display', 'none');
+			$(".payment_detail").css('display','none');
+			$(".overhang_detail").css('display','block');
+			$(".receipt_detail").css('display','none');
+			$(".assess_detail").css('display','none');
+		});
+		$("#receipt").click(function() {
+			$(".title li").removeClass('select');
+			$(this).addClass('select');
+			$(".all_detail").css('display', 'none');
+			$(".payment_detail").css('display','none');
+			$(".overhang_detail").css('display','none');
+			$(".receipt_detail").css('display','block');
+			$(".assess_detail").css('display','none');
+		});
+		$("#assess").click(function() {
+			$(".title li").removeClass('select');
+			$(this).addClass('select');
+			$(".all_detail").css('display', 'none');
+			$(".payment_detail").css('display','none');
+			$(".overhang_detail").css('display','none');
+			$(".receipt_detail").css('display','none');
+			$(".assess_detail").css('display','block');
+		});
+
+
+		//返回积分商城
+		$('#back').click(function() {
+			window.location.href='02.html';
+		});
+	});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

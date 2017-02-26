@@ -1,0 +1,1287 @@
+/*top-bar--start*/
+body {
+	background-color: #fff;
+	padding: 0;
+	margin: 0;
+}
+.top-bar {
+	background-color: #fff;
+	float: left;
+	padding: 10px 0 10px;
+	width: 100%
+}
+
+.top-bar-return {
+	float: left;
+	width: 10%;
+	line-height: 28px;
+	text-align: center
+}
+@media screen and (max-width:320px){
+	.top-bar-return img {
+		vertical-align: middle;
+		width: 20px
+	}
+
+	.top-bar-title {
+		float: left;
+		width: 80%;
+		text-align: center;
+		font-size: 1.3em;
+		font-family: '黑体'
+	}
+	
+}
+@media screen and (min-width:321px){
+
+	.top-bar-return img {
+		vertical-align: middle;
+		width: 25px
+	}
+
+	.top-bar-title {
+		float: left;
+		width: 80%;
+		text-align: center;
+		font-size: 1.5em;
+		font-family: '黑体'
+	}
+}
+@media screen and (min-width:375px){
+	.top-bar-return img {
+		vertical-align: middle;
+		width: 25px
+	}
+
+	.top-bar-title {
+		float: left;
+		width: 80%;
+		text-align: center;
+		font-size: 1.7em;
+		font-family: '黑体'
+	}
+}
+@media screen and (min-width:412px){
+	.top-bar-return img {
+		vertical-align: middle;
+		width: 30px
+	}
+
+	.top-bar-title {
+		float: left;
+		width: 80%;
+		text-align: center;
+		font-size: 2em;
+		font-family: '黑体'
+	}
+}
+@media screen and (min-width:768px){
+
+
+	.top-bar-return img {
+		vertical-align: middle;
+		width: 40px
+	}
+
+	.top-bar-title {
+		float: left;
+		width: 80%;
+		text-align: center;
+		font-size: 3em;
+		font-family: '黑体'
+	}
+}
+
+/*top-bar--end*/
+
+/*exchangeButton--start*/
+a img {
+  border: 0;
+}
+a {
+  text-decoration: none;
+}
+@font-face {
+  font-weight: normal;
+  font-style: normal;
+  font-family: "weui";
+  src: url('data:application/octet-stream;base64,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') format('truetype');
+}
+
+.weui_btn.weui_btn_mini {
+  /*line-height: 1.9;*/
+  display: inline-block;
+}
+
+.weui_btn {
+  position: absolute;
+  right: 0em;
+  /*display: block;*/
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 14px;
+  padding-right: 14px;
+  box-sizing: border-box;
+  text-align: center;
+  text-decoration: none;
+  color: #FFFFFF;
+  line-height: 2.33333333;
+  border-radius: 25px;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  overflow: hidden;
+}
+.weui_btn:after {
+  content: " ";
+  width: 200%;
+  height: 200%;
+  position: absolute; 
+  top: 0;
+  left: 0;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  box-sizing: border-box;
+  border-radius: 25px;
+}
+.weui_btn_red {
+  background-color: #CE092A;
+}
+.red_btn_size{
+	font-size: 1em;
+	padding: 0 1.75em;
+}
+.grey_btn_size{
+	font-size: 1em;
+	padding: 0 1.1em;
+}
+.weui_btn_red:not(.weui_btn_disabled):visited {
+  color: #FFFFFF;
+}
+.weui_btn_red:not(.weui_btn_disabled):active {
+  color: rgba(255, 255, 255, 0.4);
+  background-color: #CE092A;
+}
+.weui_btn_grey {
+  background-color: #999999;
+}
+/*weui--end*/
+
+/*02积分商城--start*/
+.redColor{
+	color:#FF0000;
+}
+.greyColor{
+	color:#666666;
+}
+.lightGrayColor{
+	color: #CCCCCB;
+}
+.blackColor{
+	color:#000000;
+}
+@media screen and (max-width:320px){
+	.imgs{width:100%;}
+	.point{
+		font-size:175%;
+	}
+	.fonts{
+		font-size:130%;
+	}
+	.fontGuoren{
+		font-size:115%;
+	}
+	.fon{
+		font-size:90%;
+	}
+	.imgGuoren{
+		width: 100%;
+	}
+	#shoppingCar{
+		width:20%;
+		height:20%;
+	}
+}
+@media screen and (min-width:321px){
+	.imgs{width:100%;}
+	.point{
+		font-size:175%;
+	}
+	.fontGuoren{
+		font-size:130%;
+	}
+	.fonts{
+		font-size:150%;
+	}
+	.fon{
+		font-size:100%;
+	}
+	.imgGuoren{
+		width: 100%;
+	}
+	#shoppingCar{
+		width:20%;
+		height:20%;
+	}
+}
+@media screen and (min-width:375px){
+	.imgs{width:100%;}
+	.point{
+		font-size:175%;
+	}
+	.fonts{
+		font-size:150%;
+	}
+	.fon{
+		font-size:100%;
+	}
+	.fontGuoren{
+		font-size:1.25em;
+	}
+	.imgGuoren{
+		width: 100%;
+	}
+	#shoppingCar{
+		width:20%;
+		height:20%;
+	}
+}
+@media screen and (min-width:768px){
+	.imgs{width:45%;}
+	.point{
+		font-size:175%;
+	}
+	#shoppingCar{
+		width:10%;
+		height:10%;
+	}
+	.container-fluid{
+		width:100%;
+	}
+
+}
+
+/*myCarousel--start*/
+ul, ol, li {
+	list-style-type:none;
+	vertical-align:0;
+	margin:0;
+	padding:0;
+	-webkit-text-size-adjust: none}
+
+.slider{display:none}/*用于获取更加体验*/
+.focus span{
+	width:10px;
+	height:10px;
+	margin-right:10px;
+	border-radius:50%;
+	background:#ffffff;
+	font-size:0}
+.focus span.current{background:#FF0000}
+/*myCarousel--end*/
+
+/*myCarousel--start*/
+.Carousel span{
+	width:10px;
+	height:10px;
+	margin-right:5px;
+	/*margin-top:15%;*/
+	border-radius:50%;
+	background:#C4C4C4;
+	font-size:0}
+.Carousel span.current{background:#FF0000}
+/*myCarousel--end*/
+
+/*02积分商城--end*/
+
+/*03立即兑换--start*/
+.verticalLine{
+	height:2em; 
+	width:100px; 
+	border-left:0.2em #FF6027 solid; 
+	margin-left:0.2em;
+}
+.explain{
+	font-size:1.5em;
+}
+.goods{
+	font-size:0.8em;
+	padding-left:1em;
+	padding-right:1em
+}
+.conversion{
+	font-size:0.8em;
+}
+.fivePoint{
+	font-size:2em;
+}
+
+.weui_dialog_confirm .weui_dialog .weui_dialog_hd {
+  padding: 1.2em 20px .5em;
+}
+.weui_dialog_confirm .weui_dialog .weui_dialog_bd {
+  text-align: left;
+}
+.weui_dialog_hd {
+  padding: 1.2em 0 .5em;
+}
+.weui_dialog_title {
+  font-weight: 400;
+  font-size: 17px;
+}
+.weui_dialog_bd {
+  padding: 0 20px;
+  font-size: 15px;
+  color: #888;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+.weui_dialog_ft {
+  position: relative;
+  line-height: 42px;
+  margin-top: 20px;
+  font-size: 17px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+.weui_dialog_ft a {
+  display: block;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+  color: #3CC51F;
+  text-decoration: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.weui_dialog_ft a:active {
+  background-color: #EEEEEE;
+}
+.weui_dialog_ft:after {
+  content: " ";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 1px;
+  border-top: 1px solid #D5D5D6;
+  color: #D5D5D6;
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  -webkit-transform: scaleY(0.5);
+          transform: scaleY(0.5);
+}
+.weui_dialog_confirm .weui_dialog_ft a {
+  position: relative;
+}
+.weui_dialog_confirm .weui_dialog_ft a:after {
+  content: " ";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1px;
+  height: 100%;
+  border-left: 1px solid #D5D5D6;
+  color: #D5D5D6;
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  -webkit-transform: scaleX(0.5);
+          transform: scaleX(0.5);
+}
+.weui_dialog_confirm .weui_dialog_ft a:first-child:after {
+  display: none;
+}
+.weui_btn_dialog.default {
+  color: #353535;
+}
+.weui_btn_dialog.primary {
+  color: #0BB20C;
+}
+
+.weui_dialog {
+  position: fixed;
+  z-index: 5000;
+  width: 85%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: #FAFAFC;
+  text-align: center;
+  border-radius: 3px;
+  overflow: hidden;
+}
+@media screen and (min-width: 1024px) {
+  .weui_dialog {
+    width: 35%;
+  }
+}
+/*03立即兑换--end*/
+
+/*04填写个人信息--start*/
+.input-lg,
+.form-group-lg .form-control {
+  margin-top:8px;
+}
+.form-control {
+  display: block;
+  width: 100%;
+  height: 34px;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 0px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+  -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+       -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+          transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+.form-control:focus {
+  border-color: #66afe9;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+          box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+}
+.form-control::-moz-placeholder {
+  color: #999;
+  opacity: 1;
+}
+.form-control:-ms-input-placeholder {
+  color: #999;
+}
+.form-control::-webkit-input-placeholder {
+  color: #999;
+}
+@media screen and (max-width:320px){
+	.lg-size{
+		font-size: 13px;
+	}
+	
+}
+@media screen and (min-width:321px){
+	.lg-size{
+		font-size: 15px;
+	}
+}
+@media screen and (min-width:375px){
+	.lg-size{
+		font-size: 19px;
+	}
+}
+@media screen and (min-width:768px){
+	.lg-size{
+		font-size: 25px;
+	}
+}
+/*04填写个人信息--start*/
+/*05-07--start*/
+.exchangeimg{
+	width:60%;
+	margin-top:20%;
+}
+.exchangefont{
+	font-size:1.5em
+}
+/*05-07--end*/
+
+/*08商品详情--start*/
+.moneySize{
+	font-size: 1.5em;
+}
+
+.btn{
+	display:inline-block;
+	margin-left:auto;
+	margin-right:auto;
+	box-sizing:border-box;
+	text-align:center;
+	color: #FFFFFF;
+	overflow: hidden;
+	border: 0px solid #ccc;
+  	border-radius: 0px;
+}
+.orangeBtn{
+	background-color:#FF9E20;
+}
+.redBtn{
+	background-color:#F10B31;
+}
+@media screen and (max-width:320px){
+	.btn{
+		line-height: 3;
+		font-size:1.2em;
+	}
+	.orangeBtn{
+		padding:0 0.4em;
+	}
+	.redBtn{
+		padding:0 0.8em;
+	}
+	
+}
+@media screen and (min-width:321px){
+	.btn{
+		line-height: 3;
+		font-size:1.3em;
+	}
+	.orangeBtn{
+		padding:0 0.55em;
+	}
+	.redBtn{
+		padding:0 0.85em;
+	}
+}
+@media screen and (min-width:375px){
+	.btn{
+		line-height: 3;
+		font-size:1.3em;
+	}
+	.orangeBtn{
+		padding:0 0.7em;
+	}
+	.redBtn{
+		padding:0 1.1em;
+	}
+}
+@media screen and (min-width:412px){
+	.btn{
+		line-height: 3;
+		font-size:1.3em;
+	}
+	.orangeBtn{
+		padding:0 1em;
+	}
+	.redBtn{
+		padding:0 1.5em;
+	}
+}
+@media screen and (min-width:768px){
+	.btn{
+		line-height: 3;
+		font-size:2em;
+	}
+	.orangeBtn{
+		padding:0 2em;
+	}
+	.redBtn{
+		padding:0 2.5em;
+	}
+}
+/*08商品详情--end*/
+
+/*09加入购物车--start*/
+.lt-rt{ 
+	position:absolute; 
+	/*bottom:0.1rem; */
+	right:2.2rem; 
+	width:0.9rem; 
+	height:0.3rem;}
+.lt-rt input{ 
+	float:left; 
+	width:0.3rem; 
+	height:0.3rem; 
+	font-size:0.2rem; 
+	border:1px solid #e5e5e5; 
+	text-align:center; 
+	color:#A1A09C; 
+	background-color:#fff;
+	/*display:inline-block; */
+}
+.lt-rt input.result{ 
+	border:none; }
+
+.btn1{
+	line-height: 2;
+	/*font-size:2em;*/
+	display:inline-block;
+	margin-left:auto;
+	margin-right:auto;
+	box-sizing:border-box;
+	text-align:center;
+	color: #FFFFFF;
+	overflow: hidden;
+	border: 0px solid #ccc;
+  	border-radius: 4px;
+}
+.redBtnShop{
+	background-color:#F10B31;
+	/*padding:0 3.7em;*/
+}
+@media screen and (max-width:320px){
+	.btn1{
+		line-height: 2;
+		font-size:1.5em;
+	}
+	.redBtnShop{
+		padding:0 3em;
+	}
+	
+}
+@media screen and (min-width:321px){
+	.btn1{
+		line-height:2;
+		font-size:1.8em;
+	}
+	.redBtnShop{
+		padding:0 3em;
+	}
+}
+@media screen and (min-width:375px){
+	.btn1{
+		line-height: 2;
+		font-size:2em;
+	}
+	.redBtnShop{
+		padding:0 3em;
+	}
+}
+@media screen and (min-width:412px){
+	.btn1{
+		line-height: 2;
+		font-size:2.2em;
+	}
+	.redBtnShop{
+		padding:0 3em;
+	}
+}
+@media screen and (min-width:768px){
+	.btn1{
+		line-height: 2;
+		font-size:2.5em;
+	}
+	.redBtnShop{
+		padding:0 3em;
+	}
+}
+
+/*09加入购物车--end*/
+/*10加入购物车--start*/
+[class^="weui_icon_"]:before,
+[class*=" weui_icon_"]:before {
+  font-family: "weui";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  vertical-align: middle;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1em;
+  margin-left: .2em;
+}
+
+.weui_icon_circle:before {
+  font-size: 23px;
+  color: #C9C9C9;
+}
+.weui_icon_circle:before {
+  content: "\EA01";
+}
+
+.weui_icon_success:before {
+  content: "\EA06";
+}
+.weui_icon_success:before {
+  font-size: 23px;
+  color: #ED0000;
+}
+
+.icons .icon_sp_area{
+	padding:10px 20px;
+	text-align:left
+}
+.icons i{margin:0 5px 10px}
+
+
+.addAdrBtn{
+	line-height: 3;
+	padding:0 6em;
+	display:inline-block;
+	margin-left:auto;
+	margin-right:auto;
+	box-sizing:border-box;
+	text-align:center;
+	/*color: #ccc;*/
+	overflow: hidden;
+	border: 1px solid #ccc;
+  	border-radius: 4px;
+}
+
+.payBtn{
+	line-height: 2;
+	padding:0 0.5em;
+	font-size:1.2em;
+	display:inline-block;
+	margin-left:auto;
+	margin-right:auto;
+	box-sizing:border-box;
+	text-align:center;
+	color: #ccc;
+	overflow: hidden;
+	border: 1px solid #ccc;
+  	border-radius: 4px;
+  	background-color: #D60000;
+}
+
+.imgPink{
+	width:100%;
+}
+.tint{
+	color: #ccc;
+}
+.marginTop1{
+	margin-top: 1em;
+}
+@media screen and (max-width:320px){
+	.gap{
+		padding-left: 1em;
+	}
+	.addAdrBtnSize{
+		font-size:1.3rem;
+	}
+	.fintSize{
+		font-size:0.8em;
+	}
+	.payFontSize{
+		font-size:1.2em;
+		line-height:3em;
+	}
+	.adrFontSize{
+		font-size:1.5em;
+		line-height:2em;
+	}
+	.adrSize{
+		font-size:1.0em;
+		line-height:2em;
+	}
+}
+@media screen and (min-width:321px){
+	.gap{
+		padding-left: 1em;
+	}
+	.addAdrBtnSize{
+		font-size:1.5rem;
+	}
+	.fintSize{
+		font-size:1em;
+	}
+	.payFontSize{
+		font-size:1.2em;
+		line-height:3em;
+	}
+	.adrFontSize{
+		font-size:1.5em;
+		line-height:2em;
+	}
+	.adrSize{
+		font-size:1.0em;
+		line-height:2em;
+	}
+}
+@media screen and (min-width:375px){
+	.gap{
+		padding-left: 1em;
+	}
+	.addAdrBtnSize{
+		font-size:1.5rem;
+	}
+	.fintSize{
+		font-size:1.3em;
+	}
+	.payFontSize{
+		font-size:1.3em;
+		line-height:3em;
+	}
+	.adrFontSize{
+		font-size:1.5em;
+		line-height:2em;
+	}
+	.adrSize{
+		font-size:1.0em;
+		line-height:2em;
+	}
+}
+@media screen and (min-width:412px){
+	.gap{
+		padding-left: 1em;
+	}
+	.addAdrBtnSize{
+		font-size:1.8rem;
+	}
+	.fintSize{
+		font-size:1.5em;
+	}
+	.payFontSize{
+		font-size:1.5em;
+		line-height:3em;
+	}
+	.adrFontSize{
+		font-size:1.5em;
+		line-height:2em;
+	}
+	.adrSize{
+		font-size:1.0em;
+		line-height:2em;
+	}
+}
+@media screen and (min-width:768px){
+	.floatleft{
+		margin-left: -4em;
+	}
+	.addAdrBtnSize{
+		font-size:3rem;
+	}
+	.fintSize{
+		font-size:3em;
+	}
+	.payFontSize{
+		font-size:3em;
+		line-height:3em;
+	}
+	.adrFontSize{
+		font-size:3em;
+		line-height:2em;
+	}
+	.adrSize{
+		font-size:2em;
+		line-height:1em;
+	}
+	.marginTop{
+		margin-top: 2em;
+	}
+}
+
+/*09加入购物车--end*/
+
+/*11添加地址--start*/
+
+.weui_media_box.weui_media_small_appmsg .weui_cells {
+  margin-top: 0;
+}
+.weui_media_box.weui_media_small_appmsg .weui_cells:before {
+  display: none;
+}
+
+.weui_cells {
+  margin-top: 1.17647059em;
+  background-color: #FFFFFF;
+  line-height: 1.41176471;
+  font-size: 1.5rem;
+  overflow: hidden;
+  position: relative;
+}
+.weui_cells:before {
+  content: " ";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 1px;
+  border-top: 1px solid #D9D9D9;
+  color: #D9D9D9;
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  -webkit-transform: scaleY(0.5);
+          transform: scaleY(0.5);
+}
+.weui_cells:after {
+  content: " ";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  border-bottom: 1px solid #D9D9D9;
+  color: #D9D9D9;
+  -webkit-transform-origin: 0 100%;
+          transform-origin: 0 100%;
+  -webkit-transform: scaleY(0.5);
+          transform: scaleY(0.5);
+}
+
+.weui_cells_title {
+  margin-top: .77em;
+  margin-bottom: .3em;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: #888;
+  font-size: 14px;
+}
+.weui_cells_title + .weui_cells {
+  margin-top: 0;
+}
+
+
+.weui_cell_bd:after {
+  content: " ";
+  display: inline-block;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  height: 6px;
+  width: 6px;
+  border-width: 2px 2px 0 0;
+  border-color: #C8C8CD;
+  border-style: solid;
+  position: relative;
+  top: -2px;
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  margin-top: -3px;
+}
+.weui_cell_bd {
+  /*padding-left: 15px;*/
+}
+.weui_cell_bd:after {
+  display: none;
+}
+
+.weui_cell {
+  padding: 10px 15px;
+  font-size:1.2em;
+  position: relative;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.weui_cell_primary {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+}
+.weui_cells_form input,
+.weui_cells_form textarea,
+.weui_cells_form label[for] {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.weui_input {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  -webkit-appearance: none;
+  background-color: transparent;
+  font-size: inherit;
+  color: inherit;
+  /*height: 1.41176471em;*/
+  line-height: 1.41176471;
+}
+.weui_input::-webkit-outer-spin-button,
+.weui_input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.weui_label {
+  display: block;
+  width: 90px;
+  /*margin-top:6px; */
+  /*margin-left:-10px;*/
+  word-wrap: break-word;
+  word-break: break-all;
+}
+.weui_cell_ft {
+  text-align: right;
+  color: #888;
+}
+.weui_cell:not(.no_access) {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.weui_cell:not(.no_access):active {
+  background-color: #ECECEC;
+}
+a.weui_cell {
+  color: inherit;
+}
+.weui_cell_ft:after {
+  content: " ";
+  display: inline-block;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  height: 10px;
+  width: 10px;
+  border-width: 2px 2px 0 0;
+  /*border-color: #C8C8CD;*/
+  border-style: solid;
+  position: relative;
+  top: -2px;
+  /*top: -1px;*/
+  margin-left: .3em;
+}
+
+.weui_textarea {
+  display: block;
+  border: 0;
+  resize: none;
+  width: 100%;
+  color: inherit;
+  font-size: 1em;
+  line-height: inherit;
+  outline: 0;
+}
+
+.weui_cells_checkbox .weui_cell_hd {
+  padding-right: 0.35em;
+}
+.weui_cells_checkbox .weui_cell:active {
+  /*background-color: #ECECEC;*/
+}
+.check {
+  width:1.5rem;
+  height:1.5rem;
+  background-color: #fff;
+  /*line-height: 3rem;*/
+}
+
+
+/*11添加地址--end*/
+
+
+/*12收货地址--start*/
+.weui_cells_radio .weui_radio:checked + .weui_icon_checked:before {
+  display: block;
+  content: '\EA08';
+  color: #fff;
+  width: 1.5rem;
+  height: 1.5rem;
+  font-size: 15px;
+  border: 1px solid #ED0000;
+  -webkit-border-radius: 50%;
+  background-color:#ED0000;
+  margin-top: 10px; 
+  margin-left: -10px;
+}
+.weui_radio{
+   position: absolute;
+   left: -9999em;
+
+}
+[class^="weui_icon_"]:before,
+[class*=" weui_icon_"]:before {
+  font-family: "weui";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  vertical-align: middle;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+
+[class^="weui_icon_"]:before,
+[class*=" weui_icon_"]:before {
+  margin: 0;
+}
+/*12收货地址--end*/
+
+
+
+/*13购物记录--start*/
+.evaluateBtn{
+	line-height:1.5;
+	padding:0 0.9em;
+	font-size:1em;
+	display:inline-block;
+	margin-left:auto;
+	margin-right:auto;
+	box-sizing:border-box;
+	text-align:center;
+	color: #ccc;
+	overflow: hidden;
+	border: 1px solid #ccc;
+  	border-radius: 4px;
+  	background-color: #D60000;
+}
+/*13购物记录--end*/
+
+/*14收货地址--start*/
+.payNowBtn{
+	line-height:2.3;
+	padding:0 0.9em;
+	font-size:1em;
+	display:inline-block;
+	margin-left:auto;
+	margin-right:auto;
+	box-sizing:border-box;
+	text-align:center;
+	color: #ccc;
+	overflow: hidden;
+	border: 1px solid #ccc;
+  	border-radius: 4px;
+  	background-color: #D60000;
+}
+@media screen and (max-width:320px){
+	.fontsOf{
+		font-size: 1rem
+	}
+	.fontCo{
+		font-size:0.5rem
+	}
+	.fontNum{
+		font-size: 1rem;
+	}
+	.marginLeft10{
+		margin-left:10px;
+	}
+	.marginLeft{
+		margin-left:px;
+	}
+	.payNowBtnline{
+		line-height:2;
+		font-size:1rem;
+	}
+	.marginTop0{
+		margin-top:0px;
+	}
+	.marginTop{
+		margin-top:5px;
+	}
+}
+@media screen and (min-width:321px){
+	.fontsOf{
+		font-size: 1.3rem
+	}
+	.fontCo{
+		font-size:0.5rem
+	}
+	.fontNum{
+		font-size: 1.5rem;
+	}
+	.marginLeft5{
+		margin-left:5px;
+	}
+	.marginLeft10{
+		margin-left:10px;
+	}
+	.payNowBtnline{
+		line-height:2;
+		font-size:1rem;
+	}
+	.marginTop0{
+		margin-top:0px;
+	}
+	.marginTop{
+		margin-top:5px;
+	}
+}
+@media screen and (min-width:375px){
+	.fontsOf{
+		font-size: 1.4rem
+	}
+	.fontCo{
+		font-size:0.5rem
+	}
+	.fontNum{
+		font-size: 1.7rem;
+	}
+	.marginLeft5{
+		margin-left:5px;
+	}
+	.marginLeft10{
+		margin-left:10px;
+	}
+	.marginLeft10{
+		margin-left:10px;
+	}
+	.payNowBtnline{
+		line-height:2;
+		font-size:1rem;
+	}
+	.marginTop0{
+		margin-top:0px;
+	}
+	.marginTop{
+		margin-top:5px;
+	}
+}
+@media screen and (min-width:412px){
+	.fontsOf{
+		font-size: 1.6rem
+	}
+	.fontCo{
+		font-size:0.5rem
+	}
+	.fontNum{
+		font-size: 1rem;
+	}
+	.marginLeft5{
+		margin-left:5px;
+	}
+	.marginLeft10{
+		margin-left:10px;
+	}
+	.marginLeft10{
+		margin-left:10px;
+	}
+	.payNowBtnline{
+		line-height:2;
+		font-size:1rem;
+	}
+	.marginTop0{
+		margin-top:0px;
+	}
+	.marginTop{
+		margin-top:10px;
+	}
+}
+@media screen and (min-width:768px){
+	.fontsOf{
+		font-size: 3rem
+	}
+	.fontCo{
+		font-size:2rem
+	}
+	.fontNum{
+		font-size: 3rem;
+	}
+	.marginLeft5{
+		margin-left:5px;
+	}
+	.marginLeft10{
+		margin-left:10px;
+	}
+	.marginLeft10{
+		margin-left:10px;
+	}
+	.payNowBtnline{
+		line-height:2;
+		font-size:3rem;
+	}
+	.marginTop0{
+		margin-top:0px;
+	}
+	.marginTop{
+		margin-top:25px;
+	}
+	.weui_cells_radio .weui_radio:checked + .weui_icon_checked:before {
+	  
+	  width: 3rem;
+	  height: 3rem;
+	  font-size: 30px;
+	}
+}
+/*14收货地址--end*/

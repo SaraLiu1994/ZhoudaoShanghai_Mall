@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+	<link rel="stylesheet" href="../css/bootstrap.css" type="text/css">
+	<link rel="stylesheet" href="../css/style.css" type="text/css">
+	<script type="text/javascript" src="../js/jquery.min.js"></script>
+	<title>04填写个人信息</title>
+</head>
+<body>
+	<div class="top-bar">
+      <div class="top-bar-return">
+         <a href="javascript:history.back(-1)"><img src="../img/icon/return.png"></a>
+      </div>
+      <div class="top-bar-title">填写个人信息</div>
+   	</div>
+   	<div class="container-fluid">
+   		<form role="form">
+			<input type="text" class="form-control input-lg lg-size" id="name" name="name" placeholder="收货人姓名(长度不超过8个汉字或16个字符)" onfocus="" />
+			<input type="text" class="form-control input-lg lg-size" id="phone" name="phone" placeholder="联系电话" onfocus="" />
+			<div style="margin-top:10px">
+				<span style="color:#CE092A;">
+				<img src="../img/icon/warning.png" style="width:1.5em;margin-top:-3px">
+			 	联系人和电话不能为空
+				</span>
+			</div>
+			
+			<input type="text" class="form-control input-lg lg-size" id="address" name="address" placeholder="收货地址" onfocus="" />
+			<input type="text" class="form-control input-lg lg-size" id="cpdc" name="cpdc" placeholder="邮政编码" onfocus="" />
+			<div class="row">
+			 	<div class="col-md-6 col-xs-6 col-sm-6">
+					<input type="text" class="form-control input-lg lg-size" id="verificationCode" name="verificationCode" placeholder="验证码" onfocus="" />
+			 	</div>
+			 	<div class="col-md-6 col-xs-6 col-sm-6">
+			 		<a href="javascript:;" class="weui_btn weui_btn_mini weui_btn_red red_btn_size" style="margin-top:10px;">获取验证码</a>
+			 	</div>
+			</div>
+			<div class="row" style="margin-top:10px">
+			 	<div class="col-md-12 col-xs-12 col-sm-12">
+			 		<a href="javascript:;" class="weui_btn weui_btn_mini weui_btn_grey grey_btn_size">120s后可重发</a>
+			 	</div>
+			</div>
+		</form>
+		<div style="padding-top:90%">
+	   		<hr/>
+	   		<center><a href="#" style="font-size:1.5em;color:#000000;" id="ok">确定</a></center>
+   		</div>
+   	</div>
+ <script type="text/javascript">
+ 	$('#ok').click(function () {
+              // body...
+              var name=$('#name').val();
+              var phone=$('#phone').val();
+              var address=$('#address').val();
+              var cpdc=$('#cpdc').val();
+              var verificationCode=$('#verificationCode').val();
+              alert(name);
+              // textareaContents = $('#Textarea').val();
+               $.ajax({
+                 type: "post",
+                 url:"",
+                 data:{
+                   "id":order_id,
+                   "name":name,
+                   "phone":phone,
+                   "address":address,
+                   "cpdc":cpdc,
+                   "verificationCode":verificationCode
+                 },
+                 success: function(data, textStatus){
+                   window.location.href="#";
+                   }
+              }); 
+            });
+ </script>  	
+   	
+</body>
+</html>
